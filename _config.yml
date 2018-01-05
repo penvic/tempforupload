@@ -1,0 +1,48 @@
+# ----
+# Site
+
+title: Dspread
+description: Jekyll template for API documentation.
+url: https://example.com
+google_analytics_key:
+permalink: pretty
+
+collections:
+  documentation:
+    title: Documentation
+    position: 1
+  normalapi:
+    title: NormalAPIs
+    position: 2
+  transactionsapi:
+    title: TransactionsAPIs
+    position: 3
+  keyinjectionapi:
+    title: keyinjectionAPIs
+    position: 4
+  contactus:
+     title: contactus 
+     position: 5
+    
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - readme.md
+  - LICENCE
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+      comments: true
+
+types:
+  - get
+  - put
+  - delete
+  - post
